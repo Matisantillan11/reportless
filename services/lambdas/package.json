@@ -1,0 +1,19 @@
+{
+  "name": "@report-generator/lambdas",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@report-generator/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.160",
+    "esbuild": "^0.27.3",
+    "typescript": "^5.8.0"
+  }
+}
